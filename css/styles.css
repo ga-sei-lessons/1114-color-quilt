@@ -1,0 +1,18 @@
+/* css variables: use the root pseudo selector */
+:root {
+    --square-side: 30px;
+}
+
+body {
+    background-color: black;
+    color: hotpink;
+}
+
+.square {
+    height: var(--square-side);
+    width: var(--square-side);
+    border: 1px solid grey;
+    border-radius: calc(var(--square-side) / 5);
+    display: inline-block;
+    color: white;
+}
