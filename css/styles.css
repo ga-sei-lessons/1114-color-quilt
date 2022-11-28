@@ -1,5 +1,5 @@
 /* css variables: use the root pseudo selector */
-:root {
+/* :root {
     --square-side: 30px;
 }
 
@@ -15,4 +15,26 @@ body {
     border-radius: calc(var(--square-side) / 5);
     display: inline-block;
     color: white;
+} */
+
+div {
+    border: 1px solid white; 
+}
+
+#container {
+    width: 608px;
+}
+
+#color-palette, #my-palette {
+    display: inline-block;
+    width: 300px;
+    height: 505px;
+    overflow: hidden;
+}
+
+.square {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
 }
