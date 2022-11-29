@@ -1,8 +1,8 @@
 /* css variables: use the root pseudo selector */
-/* :root {
+:root {
     --square-side: 30px;
 }
-
+/*
 body {
     background-color: black;
     color: hotpink;
@@ -17,7 +17,7 @@ body {
     color: white;
 } */
 
-div {
+/* div {
     border: 1px solid white; 
 }
 
@@ -37,4 +37,30 @@ div {
     width: 28px;
     height: 28px;
     cursor: pointer;
+} */
+
+.box {
+    width: var(--square-side);
+    height: var(--square-side);
+    display: inline-block;
 }
+
+.container {
+    width: calc(var(--square-side) * 8);
+    line-height: 0;
+}
+
+/* PYRAMID BONUS */
+.triangle {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    /* background-color: hotpink; */
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid red;
+  }
+  
+  .row {
+    text-align: center;
+  }
